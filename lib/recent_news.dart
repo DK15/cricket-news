@@ -16,7 +16,7 @@ class _RecentNewsState extends State<RecentNews> with AutomaticKeepAliveClientMi
 
   FetchNews() async {
     var response = await http.get(
-        'https://newsapi.org/v2/everything?sources=espn-cric-info&apiKey=a5bac0eb82474fb3af734ab8b98320eb');
+        'https://newsapi.org/v2/everything?sources=espn-cric-info&apiKey=apikey');
 
     if (response.statusCode == 200) {
       _news.clear();
